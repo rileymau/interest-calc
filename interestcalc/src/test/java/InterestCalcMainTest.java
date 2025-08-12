@@ -10,9 +10,9 @@ public class InterestCalcMainTest {
     public void testMainValidInput() {
         // Input test data
         // Use principal = 1000, rate = 5, time = 5
-        String simulatedInput = '1000\n5\n5\n';
+        String simulatedInput = "1000\n5\n5\n";
         InputStream originalIn = System.in;
-        PrintStream originalOut = Sytem.out;
+        PrintStream originalOut = System.out;
 
         ByteArrayInputStream testIn = new ByteArrayInputStream(simulatedInput.getBytes());
         ByteArrayOutputStream testOut = new ByteArrayOutputStream();
