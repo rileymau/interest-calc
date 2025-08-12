@@ -15,3 +15,20 @@ This mini project was made with the help of ChatGPT 4o.
 ## Local Development
 
 To run the program... 
+
+Check that you have java installed (Mac directions)
+
+```shell
+brew install openjdk
+```
+
+Compile
+
+```shell
+javac InterestCalc.java InputValidator.java
+```
+
+Run with user input
+```shell
+asdf
+```

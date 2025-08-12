@@ -5,11 +5,12 @@ import java.util.InputMismatchException;
 public class InputValidator {
     /**
      * Validates that a number is positive
+     * The interest calculator only will work with positive inputs
      * Throws IllegalArgumentException if not positive
      */
     public static void validatePositive(double value, String fieldName) {
         if (value <= 0) {
-            throw new IllegalArgumentException(fielName + "must be greater than 0.");
+            throw new IllegalArgumentException(fieldName + "must be greater than 0.");
         }
     }
 
@@ -23,7 +24,7 @@ public class InputValidator {
             validatePositive(value, fieldName);
             return value;
         } catch (NumberFormatException e) {
-            throw new InputMismatchException("Invalid input for " + fieldName + ". Pleae enter a number.")
+            throw new InputMismatchException("Invalid input for " + fieldName + ". Pleae enter a number.");
         }
     }
 }
