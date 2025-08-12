@@ -16,21 +16,22 @@ This mini project was made with the help of ChatGPT 4o.
 
 To run the program... 
 
-Check that you have java installed (Mac directions)
+Check that you have java and gradle installed (Homebrew directions)
 
 ```shell
 brew install openjdk
+brew install gradle
 ```
 
 Compile
 
 ```shell
-javac main/*.java
+javac -d out interestcalc/src/main/java/*.java
 ```
 
 Run with user input
 ```shell
-java main.InterestCalc
+java -cp out main.InterestCalc
 ```
 All user inputs should be integers or floats.  
 
