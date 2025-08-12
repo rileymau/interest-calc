@@ -25,10 +25,13 @@ brew install openjdk
 Compile
 
 ```shell
-javac InterestCalc.java InputValidator.java
+javac main/*.java
 ```
 
 Run with user input
 ```shell
-asdf
+java main.InterestCalc
 ```
+All user inputs should be integers or floats.  
+
+Thanks for checking out my java app! 
